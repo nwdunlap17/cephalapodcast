@@ -1,3 +1,7 @@
-6
-board:green orange green red orange green red blue green purple
-cards:red red red orange orange orange green green blue purple
+start:a
+finish:d
+a b
+a c
+b e
+c g
+e d

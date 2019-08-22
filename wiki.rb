@@ -1,10 +1,11 @@
 def wiki(hash,start,finish)
     paths = [start]
-    
-    while found = false
+    found = false
+    while found == false
         new_paths = []
-        path.each do |path|
+        paths.each do |path|
             key = path[-1]
+            p key
             hash[key].each do |route|
                 new_path = path 
                 new_path << route
@@ -27,7 +28,6 @@ lines.each do |line|
         start = line.split("start:")[1]
     elsif line.include?("finish:")
         finish = line.split("finish:")[1]
-
     else
     link = line.split(" ")
     if !!!hash[link[0]]
