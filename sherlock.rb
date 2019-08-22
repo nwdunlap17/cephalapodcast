@@ -1,7 +1,3 @@
-lines = ARGF.read.split("\n")
-lines.each do |line|
-    puts sherlock(line)
-end
 
 def sherlock(line)
     lines = line.split('')
@@ -39,4 +35,9 @@ def sherlock(line)
     end
 
     return true
+end
+
+lines = ARGF.read.split("\n")
+lines.each do |line|
+    puts sherlock(line)
 end
