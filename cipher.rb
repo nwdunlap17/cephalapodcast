@@ -25,8 +25,7 @@ def cipher(line)
     puts ''
 end
 
-# lines = ARGF.read.split("\n")
-# lines.each do |line|
-#     puts cipher(line)
-# end
-cipher("02lyne176xbs1436d22gk25dm")
+lines = ARGF.read.split("\n")
+lines.each do |line|
+    puts cipher(line)
+end
