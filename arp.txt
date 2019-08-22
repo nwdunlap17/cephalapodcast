@@ -1,3 +1,10 @@
-abc
-abcc
-abccc
+Suspects:M,W,P
+Weapons:Knife,Candlestick,Lead Pipe
+Rooms:DR,BR,S
+clues:
+not W
+not the BR
+not the S
+not the Lead Pipe
+not the Knife
+not P
