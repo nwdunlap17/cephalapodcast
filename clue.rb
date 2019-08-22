@@ -1,4 +1,3 @@
-require 'pry'
 def clue(sus,weap,room,clues)
     clues.each do |clue|
         if clue.include?("not the")
