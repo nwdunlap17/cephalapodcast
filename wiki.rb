@@ -19,12 +19,22 @@ def wiki(hash,start,finish)
 end
 
 hash={}
-
+start = 0
+finish = 0
 lines = ARGF.read.split("\n")
 lines.each do |line|
+    if line.include?("start:")
+        start = line.split("start:")[1]
+    elsif line.include?("finish:")
+        finish = line.split("finish:")[1]
+
+    else
     link = line.split(" ")
     if !!!hash[link[0]]
         hash[link[0]] = []
     end
     hash[link[0]] << link[1]
 end
+end
+
+wiki()
