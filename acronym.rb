@@ -1,8 +1,4 @@
-lines = ARGF.read.split("\n")
-lines.each do |line|
-    #puts line
-    format(line.to_i)
-end
+
 
 def acronym(lines)
     capital = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -17,4 +13,10 @@ def acronym(lines)
     return arr.join("")
 end
 
-print acronym(lines)
+lines = ARGF.read.split("\n")
+lines.each do |line|
+    #puts line
+    #format(line.to_i)
+    puts    acronym(line.split(''))
+end
+# print acronym(lines)
