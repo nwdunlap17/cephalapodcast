@@ -37,4 +37,4 @@ lines.each do |line|
 end
 end
 
-wiki()
+wiki(hash,start,finish)
